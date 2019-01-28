@@ -1,0 +1,63 @@
+<html>
+    <head>
+            <style>
+            #clear
+             {
+             width: 40px;
+			 margin: 1px;
+             } 
+             .main
+            {
+             width: 150px;
+             height: 150px;
+             margin: auto;
+             border : 2px solid black; 
+            }  
+            input
+            {
+             width: 40px;
+             background-color: rebeccapurple;
+             color : black;
+             border : 2px solid black ;
+             }
+            #answerstyle
+             {
+                width : 175px;
+             }
+            </style>
+    </head>
+    <body>
+        <div class ="main">
+        <form name= "form">
+        <input type="text" name="answer" id ="answerstyle" value="">
+
+        <table>
+            <tr>
+                <td><input  type="button" value="c" onclick="answerstyle.value= ' '" id="clear"></td>
+                <td><input  type="button" value="." onclick="form.answerstyle.value += '.'"></td>
+                <td><input  type="button" value="/" onclick="form.answerstyle.value += '/'"></td>
+                <td><input  type="button" value="=" onclick="form.answerstyle.value = eval(form.answer.value) "></td>
+            </tr>
+            <tr>
+                <td><input  type="button" value="1" onclick="form.answerstyle.value +='1' "></td>
+                <td><input  type="button" value="2" onclick="form.answerstyle.value += '2' " ></td>
+                <td><input  type="button" value="3" onclick="form.answer.value += '3' "></td>
+                <td><input  type="button" value="+" onclick="form.answer.value += '+' "></td>
+            </tr>
+                    <td><input type="button" value="4" onclick="form.answer.value += '4' "></td>
+                    <td><input type="button" value="5" onclick="form.answer.value += '5' "></td>
+                    <td><input type="button" value="6" onclick="form.answer.value += '6' "></td>
+                    <td><input type="button" value="-" onclick="form.answer.value += '-' "></td>
+            </tr>
+            <tr>
+                    <td><input  type="button" value="7" onclick="form.answer.value += '7' "></td>
+                    <td><input  type="button" value="8" onclick="form.answer.value += '8' "></td>
+                    <td><input  type="button" value="9"onclick="form.answer.value += '9' "></td>
+                    <td><input  type="button" value="*" onclick="form.answer.value += '*' "></td>
+            </tr>
+        </table>
+        </form>
+
+        </div>
+    </body>
+</html>
